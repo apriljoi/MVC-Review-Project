@@ -17,8 +17,7 @@ namespace JollySpots.Controllers
         // GET: Reviews
         public ActionResult Index()
         {
-            var reviews = db.Reviews.Include(r => r.Category);
-            return View(reviews.ToList());
+            return View(db.Reviews.ToList());
         }
 
         // GET: Reviews/Details/5
@@ -39,7 +38,6 @@ namespace JollySpots.Controllers
         // GET: Reviews/Create
         public ActionResult Create()
         {
-            ViewBag.CategoryID = new SelectList(db.Categories, "ID", "Name");
             return View();
         }
 
@@ -57,7 +55,6 @@ namespace JollySpots.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CategoryID = new SelectList(db.Categories, "ID", "Name", review.CategoryID);
             return View(review);
         }
 
@@ -73,7 +70,6 @@ namespace JollySpots.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CategoryID = new SelectList(db.Categories, "ID", "Name", review.CategoryID);
             return View(review);
         }
 
@@ -90,7 +86,6 @@ namespace JollySpots.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CategoryID = new SelectList(db.Categories, "ID", "Name", review.CategoryID);
             return View(review);
         }
 
