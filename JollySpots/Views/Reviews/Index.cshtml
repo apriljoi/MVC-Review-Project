@@ -16,7 +16,8 @@
         <div class="col-sm-5 col-md-5">
             <div class="thumbnail">
                 <div class="caption">
-                    <h3>@Html.DisplayFor(model => item.Name)</h3>
+                    <h3>@Html.DisplayFor(model => item.Name)</h3> @*changed to DisplayFor and item.Name so that everything would be displayed. I can't explain how it works, but I definitely get that it works. 
+                                                                      this was one of my favorite parts of the project. Being able to see everything display on the reviews page by changing a coupld of words was really cool*@
                     <h4>@Html.DisplayFor(model => item.Destination)</h4>
                     <h5>@Html.DisplayFor(model => item.DateVisited)</h5>
                     <p>@Html.DisplayFor(model => item.Comment)</p>
@@ -28,6 +29,8 @@
 
 </div>
 
+@*I commented the table out to avoid erasing the entire table. I prefer to comment things out so that I can
+    go back and refer to what I commented out if need be. I did use some of the information from the table to build my rows/columns*@
 @*<table class="table">
     <tr>
         <th>

@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html> <!--This might be the page where I need to add styling to for the homepage...note to self-->
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - April J Woulard, Junior Software Developer ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -15,14 +15,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span><!--attempted to add 2 spans for the reviews and category links...it did not work-->
+                    <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Jolly Spots Amusement & Theme Park Travel Guide", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <!--I found the NavBar!!!! Reviews and Categories are not functional from the NavBar, but I am
+                        glad that I was able to add them to the navbar-->
+                    <li>@Html.ActionLink("Reviews", "Reviews", "Home")</li>
+                    <li>@Html.ActionLink("Categories", "Categories", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -31,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - April J Woulard, Junior Software Developer ASP.NET Application</p>
         </footer>
     </div>
 

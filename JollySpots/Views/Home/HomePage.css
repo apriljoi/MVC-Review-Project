@@ -1,8 +1,13 @@
-﻿/*I attempted to add a background image a number of ways, but it doesn't seem to be showing up on the home page. I have this linked to my home index in, but still nothing. Note to self, figure this out! */
+﻿/*I attempted to add a background image a number of ways, but it doesn't seem to be 
+    showing up on the home page. I have this linked to my home index in, but still nothing. 
+    Note to self, figure this out! */
 body {
     background-image:url('../../https://cdn.pixabay.com/photo/2017/03/25/19/20/fun-fair-2174258_960_720.jpg')    
 }
-div.page-header {
+/*i was going to attempt to do some other styling, but decided against it when the background photo wasn't working
+    I need to do some more self study with styling.
+*/
+div.page-header { 
    
 }
 nav#navvy.navbar.navbar-static-top {

@@ -7,12 +7,13 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using JollySpots.Models;
-
+//I didn't change anything in this file. It is full of methods and if statements, which do make sense
+//note to self, learn some of the keywords that are being used that I don't know yet
 namespace JollySpots.Controllers
 {
-    public class ReviewsController : Controller
+    public class ReviewsController : Controller //Inheritence!!!
     {
-        private JollySpotsContext db = new JollySpotsContext();
+        private JollySpotsContext db = new JollySpotsContext();//I wonder if db here refers to database?
 
         // GET: Reviews
         public ActionResult Index()
