@@ -17,7 +17,8 @@ namespace JollySpots.Models
         public string Name { get; set; }
         public string Comment { get; set; }
 
-        [ForeignKey("Category")]
+        /*used the bookshelf example as a template for this foreign key*/
+        [ForeignKey("Category")] 
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }

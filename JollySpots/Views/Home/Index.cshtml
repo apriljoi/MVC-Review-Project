@@ -1,80 +1,43 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="jumbotron">
-    <h2>Jolly Spots</h2>    
+
+<!--Attempted to add a background image, but could not get the image to show up...Not to self, figure this out.-->
+
+<div class="jumbotron"> <!--I finally understand what divs are used for! -->
+    <h2>Jolly Spots</h2>  <!--Title as required--> 
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/CSS/HomePage.css" /> <!--this is what I thought would link my background image in css to this, but I must be missing something somewhere-->
     <h3>Amusement & Theme Park Travel Guide</h3>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus arcu, pharetra a lacus id, pharetra porttitor dolor. Ut et neque vitae turpis tincidunt lobortis. Suspendisse convallis dui ac nibh pharetra luctus. Etiam turpis felis, finibus in arcu ut, viverra consequat velit. Fusce ullamcorper, neque eget volutpat sagittis, ante diam feugiat nunc, ac maximus urna orci vitae purus. Mauris faucibus nisl purus, id maximus odio pretium et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras consequat vestibulum sodales. Duis feugiat felis et mi luctus, sit amet vehicula libero viverra. Integer efficitur nisl sit amet nulla volutpat egestas.</p>
-    </div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+     <!--this is the descriptions as required-->    
 </div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="http://www.bevhillsdirectory.com/entertainment/events/images/disney%20summer%202015%2017.jpg" width="1200" height="50" />
-            <div class="carousel-caption">
-                <h3>New York</h3>
-                <p>We love the Big Apple!</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="https://fun-spot.com/wp-content/uploads/Season-Pass-Slider-1500x726.jpg" width="1200" height="1000" />
-            <div class="carousel-caption">
-                <h3>New York</h3>
-                <p>We love the Big Apple!</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="http://cdn.mntm.me/c3/2d/6c/The-Best-Theme-Park-Vacations-c32d6cacecdb42ba9a2e9bb0f35b6360.jpg" width="1200" height="800" />
-            <div class="carousel-caption">
-                <h3>New York</h3>
-                <p>We love the Big Apple!</p>
-            </div>
-        </div>
+<div class="row"> <!--replaced the table with rows and colums. I am glad that I gained an understanding of how to do so, it makes for a much better user and programmer experience-->
+    <div class="col-md-6"> <!--changed the size of thumbnails to get rid of the 3rd column and create 2 equally sized columns-->
+        <h2>Reviews</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Phasellus vitae massa vitae urna rhoncus varius vel id augue. 
+            Nullam facilisis tellus mauris, sit amet consequat lorem ullamcorper vitae. 
+            Aenean ut nulla augue. Etiam eu ultricies erat. Nulla vitae consectetur libero, at porttitor ante. 
+            Sed bibendum nisl id metus dignissim, vel congue urna fermentum.
+        </p>
+        <p><a href="http://localhost:60884/Reviews/Index" class="btn btn-primary btn-lg">View Reviews &raquo;</a></p>
+    <!--I cant figure out where amongst all these files the code for the navbar is located. 
+        In order to allow the user to navigate to the Reviews section, 
+        I altered this code to do so by linking the reviews page in this button. This is a great concept.
+        Note to self, use this concept when creating personal portfolio/website. I can allow the user to view
+        the websites that I have been working on by adding the websites to the code.-->
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    <div class="col-md-6">
+        <h2>Categories</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus vitae massa vitae urna rhoncus varius vel id augue.
+            Nullam facilisis tellus mauris, sit amet consequat lorem ullamcorper vitae.
+            Aenean ut nulla augue. Etiam eu ultricies erat. Nulla vitae consectetur libero, at porttitor ante.
+            Sed bibendum nisl id metus dignissim, vel congue urna fermentum.</p>
+        <p><a href="http://localhost:60884/Categories/Index" class="btn btn-primary btn-lg">View Categories &raquo;</a></p>
+    </div>
 </div>

@@ -27,14 +27,6 @@ namespace JollySpots.Controllers
             return View();
         }
 
-        public ActionResult Reviews
-        {
-            get
-            {
-                ViewBag.Message = "Jolly Spots Review Page";
-
-                return View();
-            }
+        
         }
     }
-}
